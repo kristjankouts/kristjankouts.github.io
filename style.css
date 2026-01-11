@@ -71,3 +71,15 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* or adjust */
+  text-align: center;
+}
+
+.coming-soon h1 {
+  font-size: 2rem;
+}
