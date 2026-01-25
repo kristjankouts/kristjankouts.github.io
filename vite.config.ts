@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig(() => {
     return {
-      base: '/',
+      base: '/portfolio-site/',
       server: {
         port: 3000,
         host: 'localhost',
