@@ -16,7 +16,7 @@ const About: React.FC = () => {
                   <span className="text-2xl font-display font-bold text-white mb-1">4K+</span>
                   <span className="text-xs text-brand-white/40 uppercase tracking-widest">Quality</span>
                </div>
-               <div className="bg-white/5 p-8 rounded-2xl backdrop-blur-sm border border-white/10 flex flex-col items-center text-center transform translate-y-8 hover:translate-y-6 transition-transform duration-300">
+               <div className="bg-white/5 p-8 rounded-2xl backdrop-blur-sm border border-white/10 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
                   <Film className="text-brand-blue mb-4 w-10 h-10" />
                   <span className="text-2xl font-display font-bold text-white mb-1">50+</span>
                   <span className="text-xs text-brand-white/40 uppercase tracking-widest">Projects</span>
