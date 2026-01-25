@@ -1,13 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elektrovisual | Videography</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektrovisual - Premium Video Production</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-  <script type="module" src="./index.tsx"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                E<span class="navbar-logo-accent">V</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="desktop-nav">
+                <a href="#my-work" class="nav-link">My Work</a>
+                <a href="#about-me" class="nav-link">About Me</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link nav-contact">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Overlay -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#my-work" class="mobile-nav-link">MY WORK</a>
+            <a href="#about-me" class="mobile-nav-link">ABOUT ME</a>
+            <a href="#services" class="mobile-nav-link">SERVICES</a>
+            <a href="#contact" class="mobile-nav-link">CONTACT</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-background">
+                <div class="hero-gradient"></div>
+                <div class="hero-grid"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>Visual Excellence</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="hero-title-line">ELEKTRO</span>
+                    <span class="hero-title-line hero-title-accent">VISUAL</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Specializing in high-impact social media content and premium real estate cinematography. We turn static ideas into electric motion.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#my-work" class="btn btn-primary">
+                        <span>View Work</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3" />
+                        </svg>
+                    </a>
+                    
+                    <a href="#contact" class="btn btn-secondary">
+                        Get in touch
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-scroll-indicator">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="my-work" class="portfolio">
+            <div class="portfolio-header">
+                <div>
+                    <h2 class="section-title">MY WORK</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <p class="portfolio-subtitle">Curated motion from 2023-2024</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <img src="https://picsum.photos/600/800?random=1" alt="Urban Dynamics">
+                    <div class="portfolio-card-overlay">
+                        <div class="portfolio-card-category">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16.5 12.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"></path>
+                            </svg>
+                            <span>Social Media</span>
+                        </div>
+                        <h3 class="portfolio-card-title">Urban Dynamics</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img src="https://picsum.photos/800/600?random=2" alt="Luxe Penthouse">
+                    <div class="portfolio-card-overlay">
+                        <div class="portfolio-card-category">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            <span>Real Estate</span>
+                        </div>
+                        <h3 class="portfolio-card-title">Luxe Penthouse</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img src="https://picsum.photos/600/800?random=3" alt="Street Culture">
+                    <div class="portfolio-card-overlay">
+                        <div class="portfolio-card-category">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16.5 12.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"></path>
+                            </svg>
+                            <span>Short Form</span>
+                        </div>
+                        <h3 class="portfolio-card-title">Street Culture</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img src="https://picsum.photos/800/600?random=4" alt="Modern Villa Tour">
+                    <div class="portfolio-card-overlay">
+                        <div class="portfolio-card-category">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            <span>Real Estate</span>
+                        </div>
+                        <h3 class="portfolio-card-title">Modern Villa Tour</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img src="https://picsum.photos/800/800?random=5" alt="Brand Energy">
+                    <div class="portfolio-card-overlay">
+                        <div class="portfolio-card-category">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                            </svg>
+                            <span>Commercial</span>
+                        </div>
+                        <h3 class="portfolio-card-title">Brand Energy</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img src="https://picsum.photos/600/800?random=6" alt="Night Life">
+                    <div class="portfolio-card-overlay">
+                        <div class="portfolio-card-category">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                            </svg>
+                            <span>Event</span>
+                        </div>
+                        <h3 class="portfolio-card-title">Night Life</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-me" class="about">
+            <div class="about-container">
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <svg class="stat-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                            <circle cx="12" cy="13" r="4"></circle>
+                        </svg>
+                        <span class="stat-number">4K+</span>
+                        <span class="stat-label">Quality</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <svg class="stat-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                        </svg>
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+
+                    <a href="#contact" class="cta-card">
+                        <div>
+                            <span class="cta-title">Let's Shoot</span>
+                            <span class="cta-subtitle">Turning concepts into frames</span>
+                        </div>
+                        <svg class="cta-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <circle cx="12" cy="12" r="11"></circle>
+                            <circle cx="12" cy="12" r="7"></circle>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="about-content">
+                    <h2 class="about-title">
+                        BEHIND THE <span class="about-title-accent">LENS</span>
+                    </h2>
+                    <p class="about-text">
+                        <span class="animate-glitch">Elektrovisual</span> is a creative force aiming to bridge the gap between static imagery and digital fluidity.
+                    </p>
+                    <p class="about-text">
+                        Whether it's a <span class="text-bold">15-second viral reel</span> or a <span class="text-bold">cinematic property tour</span>, we create the content that stops the thumb.
+                    </p>
+                    <div class="about-tags">
+                        <div class="tag">Cinematography</div>
+                        <div class="tag">Editing</div>
+                        <div class="tag">Color Grading</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="services-header">
+                <h2 class="section-title">SERVICES</h2>
+                <p class="section-subtitle">Tailored video solutions for modern brands.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="M12 9v6"></path>
+                            <circle cx="12" cy="19" r="1"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Social Media Shorts</h3>
+                    <p class="service-description">High-energy reels and TikToks designed for maximum retention and viral potential.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Real Estate Tours</h3>
+                    <p class="service-description">Premium cinematic walkthroughs that highlight property features and elevate listings.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                            <line x1="7" y1="2" x2="7" y2="22"></line>
+                            <line x1="17" y1="2" x2="17" y2="22"></line>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Brand Commercials</h3>
+                    <p class="service-description">Polished promotional videos that tell your brand story and drive conversions.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                            <polyline points="13 2 13 9 20 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Event Coverage</h3>
+                    <p class="service-description">Capturing the energy of moments, from corporate launches to nightlife events.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="contact-background"></div>
+
+            <div class="contact-content">
+                <h2 class="contact-title">
+                    READY TO <span class="animate-glitch">CREATE?</span>
+                </h2>
+                <p class="contact-description">
+                    Whether you have a fully fleshed-out idea or just a spark of inspiration, let's talk about how we can bring it to life.
+                </p>
+                
+                <a href="mailto:hello@elektrovisual.com" class="btn btn-large">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                    hello@elektrovisual.com
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="footer-logo">
+                    ELEKTRO<span class="footer-logo-accent">VISUAL</span>
+                </h2>
+                <p class="footer-description">
+                    Pushing the boundaries of digital storytelling through motion and innovation.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16.5 12.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z" fill="#0A0A0A"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2s9 5 20 5a9.5 9.5 0 0 0-9-5.5c4.75 2.25 7-7 7-7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h3 class="footer-section-title">Contact</h3>
+                <div class="footer-contact-items">
+                    <a href="mailto:hello@elektrovisual.com" class="footer-contact-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        hello@elektrovisual.com
+                    </a>
+                    <div class="footer-contact-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        +1 (555) 000-0000
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year">2024</span> Elektrovisual. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
