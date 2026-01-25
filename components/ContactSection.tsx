@@ -14,7 +14,7 @@ const ContactSection: React.FC = () => {
        
        <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-5xl md:text-7xl font-display font-bold text-white mb-8 tracking-tight">
-             READY TO <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-white">CREATE?</span>
+             READY TO <span className="animate-glitch">CREATE?</span>
           </h2>
           <p className="text-xl text-brand-white/60 mb-12 max-w-2xl mx-auto">
              Whether you have a fully fleshed-out idea or just a spark of inspiration, let's talk about how we can bring it to life.

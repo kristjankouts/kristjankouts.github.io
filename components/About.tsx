@@ -21,13 +21,13 @@ const About: React.FC = () => {
                   <span className="text-2xl font-display font-bold text-white mb-1">50+</span>
                   <span className="text-xs text-brand-white/40 uppercase tracking-widest">Projects</span>
                </div>
-               <div className="col-span-2 bg-brand-blue p-8 rounded-2xl flex items-center justify-between mt-4 group cursor-pointer overflow-hidden relative">
+               <a href="#contact" className="col-span-2 bg-brand-blue p-8 rounded-2xl flex items-center justify-between mt-4 group cursor-pointer overflow-hidden relative">
                   <div className="relative z-10">
                      <span className="block text-2xl font-display font-bold text-white">Let's Shoot</span>
                      <span className="text-white/80 text-sm">Turning concepts into frames</span>
                   </div>
                   <Aperture className="text-white/30 w-16 h-16 absolute right-[-10px] bottom-[-10px] group-hover:rotate-45 transition-transform duration-700" />
-               </div>
+               </a>
             </div>
          </div>
 
@@ -36,10 +36,10 @@ const About: React.FC = () => {
                BEHIND THE <span className="text-brand-blue">LENS</span>
             </h2>
             <p className="text-brand-white/70 text-lg leading-relaxed mb-6">
-               I'm the creative force behind Elektrovisual. My mission is simple: bridge the gap between static imagery and digital fluidity.
+               <span className="animate-glitch">Elektrovisual</span> is a creative force aiming to bridge the gap between static imagery and digital fluidity.
             </p>
             <p className="text-brand-white/70 text-lg leading-relaxed mb-8">
-               Whether it's a <span className="text-white font-bold">15-second viral reel</span> or a <span className="text-white font-bold">cinematic property tour</span>, I engineer visuals that don't just look good—they perform. In a world of infinite scrolling, I create the content that stops the thumb.
+               Whether it's a <span className="text-white font-bold">15-second viral reel</span> or a <span className="text-white font-bold">cinematic property tour</span>, we create the content that stops the thumb.
             </p>
             <div className="flex gap-4">
                <div className="px-4 py-2 border border-white/10 rounded-full text-xs font-bold uppercase tracking-wider text-brand-white/50">Cinematography</div>

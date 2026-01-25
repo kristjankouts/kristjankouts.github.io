@@ -19,11 +19,8 @@ const Hero: React.FC = () => {
         </div>
         
         <h1 className="text-5xl md:text-8xl font-display font-bold text-white mb-6 tracking-tight">
-          ELEKTRO
-          <span className="relative inline-block text-brand-blue ml-2 md:ml-4">
-             VISUAL
-             <span className="absolute inset-0 animate-glitch opacity-50 text-white mix-blend-overlay" aria-hidden="true">VISUAL</span>
-          </span>
+          <span className="block">ELEKTRO</span>
+          <span className="glitch-video text-brand-blue block mt-1 md:mt-2">VISUAL</span>
         </h1>
         
         <p className="text-lg md:text-xl text-brand-white/60 mb-10 max-w-2xl mx-auto leading-relaxed">

@@ -6,9 +6,10 @@ import react from '@vitejs/plugin-react';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export default defineConfig(() => {
+export default defineConfig(({ command }) => {
     return {
-      base: process.env.NODE_ENV === 'production' ? '/portfolio-site/' : '/',
+      // For GitHub project pages: use '/your-repo-name/'. Use '/' for user/org Pages (repo: username.github.io).
+      base: command === 'build' ? '/portfolio-site/' : '/',
       server: {
         port: 3000,
         host: 'localhost',

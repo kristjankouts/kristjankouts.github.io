@@ -21,18 +21,56 @@
 
 @layer components {
   .glitch {
-    animation: glitch 1s linear infinite;
+    @apply animate-glitch;
+  }
+  /* Videography-style glitch: chromatic split + VHS-style bursts */
+  .glitch-video {
+    animation: glitch-video 4s linear infinite;
   }
 }
 
-@keyframes glitch {
-  2%, 64% {
-    transform: translate(2px, 0) skew(0deg);
+/* Raw @keyframes so text-shadow and transforms are reliable (Tailwind can drop custom props) */
+@keyframes glitch-video {
+  0%, 6%, 46%, 54%, 100% {
+    transform: translate(0, 0) skew(0deg);
+    text-shadow: none;
   }
-  4%, 60% {
-    transform: translate(-2px, 0) skew(0deg);
+  /* First burst – signal drop */
+  2% {
+    transform: translate(-6px, 3px) skew(2deg);
+    text-shadow: 6px 0 rgba(255, 50, 120, 0.9), -6px 0 rgba(0, 255, 255, 0.9);
   }
-  62% {
-    transform: translate(0, 0) skew(5deg);
+  3% {
+    transform: translate(6px, -3px) skew(-2deg);
+    text-shadow: -5px 2px rgba(255, 50, 120, 0.85), 5px -2px rgba(0, 255, 255, 0.85);
+  }
+  4% {
+    transform: translate(-4px, -2px) skew(3deg);
+    text-shadow: 4px -1px rgba(255, 50, 120, 0.8), -4px 1px rgba(0, 255, 255, 0.8);
+  }
+  5% {
+    transform: translate(3px, 2px) skew(-1deg);
+    text-shadow: -3px -2px rgba(255, 50, 120, 0.7), 3px 2px rgba(0, 255, 255, 0.7);
+  }
+  /* Second burst – tape skip / tracking error */
+  48% {
+    transform: translate(5px, -2px) skew(-1deg);
+    text-shadow: 5px 1px rgba(255, 50, 120, 0.9), -5px -1px rgba(0, 255, 255, 0.9);
+  }
+  49% {
+    transform: translate(-5px, 2px) skew(2deg);
+    text-shadow: -4px -2px rgba(255, 50, 120, 0.85), 4px 2px rgba(0, 255, 255, 0.85);
+  }
+  50% {
+    transform: translate(4px, 1px) skew(-2deg);
+    text-shadow: 4px 2px rgba(255, 50, 120, 0.8), -4px -2px rgba(0, 255, 255, 0.8);
+  }
+  51% {
+    transform: translate(-3px, -1px) skew(1deg);
+    text-shadow: -3px 1px rgba(255, 50, 120, 0.75), 3px -1px rgba(0, 255, 255, 0.75);
+  }
+  52% {
+    transform: translate(0, 0) skew(0deg);
+    text-shadow: none;
   }
 }
